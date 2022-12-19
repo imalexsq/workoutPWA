@@ -1,0 +1,63 @@
+
+.overlay {
+  height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between;
+  color: white; 
+  position: relative;
+  z-index: 2;
+}
+
+.overlay h1 {
+  background-color: rgba(35, 185, 77, 0.3);
+  text-align: center;
+  width: 100vw;
+  margin: 0
+}
+
+.instructions {
+  position: fixed;
+  width: 100vw; 
+  height: 100vh;
+  z-index: 1;
+}
+
+.instructions_text {
+  position: relative;
+  top: 25%;
+  padding: 2rem;
+}
+
+.video {
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%); 
+  position: fixed;
+  left: 75%; 
+  top: 50%; 
+  z-index: 1;
+}
+
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  background-color: rgba(35, 185, 77, 0.3);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1em;
+  height: 3rem;
+  width: 100vw;
+}
+.counter span {
+  padding: 1rem;
+}
